@@ -1,1 +1,1 @@
-# GoogleNewsScraper.
+# GoogleNewsScraper
