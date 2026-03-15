@@ -1,26 +1,45 @@
-# 📰 Google News Scraper
+# Google News Scraper 📰
 
-Welcome to **Google News Scraper**, a Python notebook designed to extract news articles from Google News. Whether you're looking to gather the latest headlines or dive into topic-specific news, this scraper will help you automate the process of collecting articles for analysis or personal use.
+[![Language](https://img.shields.io/badge/Language-Python%20%7C%20Jupyter-blue)](https://github.com/aeleraqi/GoogleNewsScraper)
+[![Stars](https://img.shields.io/github/stars/aeleraqi/GoogleNewsScraper?style=social)](https://github.com/aeleraqi/GoogleNewsScraper/stargazers)
 
-## 🌟 Features
+A Python notebook for extracting news articles from **Google News** — built for journalists, researchers, and data scientists.
 
-- **Scrape Latest News**: Automatically extract headlines and articles from Google News.
-- **Keyword-Based Search**: Customize the scraper to focus on specific topics or keywords.
-- **Article Metadata**: Gather useful information like publication date, author, and source.
-- **Export Data**: Easily export scraped data into formats like CSV or JSON for further analysis.
+## 📖 About
 
-## 🔗 Open in Colab
+**GoogleNewsScraper** automates the retrieval of news articles from Google News based on custom queries, date ranges, and topics. It outputs structured data ready for analysis, NLP processing, or journalism workflows.
 
-Click the badge below to run this notebook directly in Google Colab:
+## ✨ Features
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aeleraqi/GoogleNewsScraper/blob/main/GoogleNewsScraper.ipynb)
+- Search Google News by keyword, topic, or category
+- Filter results by date range and language
+- Extract headlines, URLs, source names, and publication dates
+- Export to CSV/JSON for downstream analysis
+- Configurable delays to respect rate limits
 
-## 🛠️ Setup & Installation
-
-To run the notebook locally, you’ll need to install the following libraries:
+## 🚀 Getting Started
 
 ```bash
-pip install requests
-pip install beautifulsoup4
-pip install pandas
-# Add any other dependencies here
+git clone https://github.com/aeleraqi/GoogleNewsScraper.git
+cd GoogleNewsScraper
+pip install -r requirements.txt
+jupyter notebook GoogleNewsScraper.ipynb
+```
+
+## 💡 Example
+
+```python
+query = "artificial intelligence"
+articles = scrape_google_news(query, max_results=50, language="en")
+# Returns DataFrame with title, url, source, date
+```
+
+## 🧰 Requirements
+
+- Python 3.8+
+- requests, BeautifulSoup4, pandas
+
+---
+**Author:** [Amr Eleraqi](https://github.com/aeleraqi) — Data Analyst | NLP Specialist | Machine Learning Expert | Educator  
+**Affiliation:** Toronto Metropolitan University, Ontario, Canada  
+[![ORCID](https://img.shields.io/badge/ORCID-0000--0003--0935--0026-brightgreen)](https://orcid.org/0000-0003-0935-0026) [![GitHub](https://img.shields.io/github/followers/aeleraqi?label=Follow&style=social)](https://github.com/aeleraqi)
